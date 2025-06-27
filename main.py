@@ -4,7 +4,7 @@ def main():
 
 
 def get_book_text():
-    with open('books/frankenstein.txt') as f:
+    with open('books/frankenstein.txt',"r", encoding="utf-8") as f:
         book_contents = f.read()
         return book_contents
 
