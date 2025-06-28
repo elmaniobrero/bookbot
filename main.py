@@ -1,6 +1,6 @@
 #**aqui va todo lo del codigo main osea este es el proyecto**#
 def main():
-    print({number_words()}, "words found in the document")
+    print(number_words()/2, "words found in the document")
 
 
 def get_book_text():
