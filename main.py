@@ -14,7 +14,7 @@ def main():
     print("============ BOOKBOT ============")
     print("Analyzing book found at", syss)
     print("----------- Word Count ----------")
-    print("Found",number_words(),"total words")
+    print("Found",number_words(syss),"total words")
     print("--------- Character Count -------")
     texto = get_book_text()
     chars = count_character(texto)
