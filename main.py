@@ -16,7 +16,7 @@ def main():
     print("----------- Word Count ----------")
     print("Found",number_words(syss),"total words")
     print("--------- Character Count -------")
-    texto = get_book_text()
+    texto = get_book_text(syss)
     chars = count_character(texto)
     
     for item in chars:
