@@ -10,7 +10,11 @@ def main():
     print("----------- Word Count ----------")
     print("Found",number_words(),"total words")
     print("--------- Character Count -------")
-    print(count_character(get_book_text()))
+    texto = get_book_text()
+    chars = count_character(texto)
+    
+    for item in chars:
+        print(f"{item['char']}: {item['num']}")
     print("============= END ===============")
 
 
