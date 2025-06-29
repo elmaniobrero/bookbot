@@ -1,5 +1,7 @@
-def get_book_text():
-    with open('books/frankenstein.txt',"r", encoding="utf-8") as f:
+
+
+def get_book_text(syss):
+    with open(syss,"r", encoding="utf-8") as f:
         book_contents = f.read()
         return book_contents
 
