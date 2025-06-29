@@ -5,8 +5,8 @@ def get_book_text(syss):
         book_contents = f.read()
         return book_contents
 
-def number_words():
-    texto = get_book_text()
+def number_words(syss):
+    texto = get_book_text(syss)
     palabras = texto.split()
     contador = 0
     for p in palabras:

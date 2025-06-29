@@ -12,7 +12,7 @@ def main():
     syss = sys.argv[1]
     
     print("============ BOOKBOT ============")
-    print("Analyzing book found at books/frankenstein.txt...")
+    print("Analyzing book found at", syss)
     print("----------- Word Count ----------")
     print("Found",number_words(),"total words")
     print("--------- Character Count -------")
