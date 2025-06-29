@@ -14,7 +14,7 @@ def number_words():
 def count_character(texto):
    
     abc= {}
-
+    
     for le in texto:
         letrasm = le.lower()
         if(letrasm in abc ):
@@ -22,4 +22,11 @@ def count_character(texto):
         else:
             abc[letrasm] = 1
     
-    return abc
+    lista = [{"char": char, "num": count} for char, count in abc.items()]
+    lista.sort(key=lambda x: x["num"], reverse=True)
+    
+    return lista
+
+
+    
+

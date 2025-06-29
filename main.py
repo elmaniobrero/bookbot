@@ -3,10 +3,16 @@
 from stats import number_words
 from stats import count_character
 from stats import get_book_text
-texto = get_book_text()
+
 def main():
-    print(number_words(), "words found in the document")
-    print(count_character(texto))
+    print("============ BOOKBOT ============")
+    print("Analyzing book found at books/frankenstein.txt...")
+    print("----------- Word Count ----------")
+    print("Found",number_words(),"total words")
+    print("--------- Character Count -------")
+    print(count_character(get_book_text()))
+    print("============= END ===============")
+
 
 
 main()
