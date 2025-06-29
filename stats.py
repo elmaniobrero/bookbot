@@ -10,3 +10,16 @@ def number_words():
     for p in palabras:
         contador = contador + 1
     return contador
+
+def count_character(texto):
+   
+    abc= {}
+
+    for le in texto:
+        letrasm = le.lower()
+        if(letrasm in abc ):
+            abc[letrasm] = abc[letrasm] + 1 
+        else:
+            abc[letrasm] = 1
+    
+    return abc
